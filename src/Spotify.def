@@ -1,0 +1,5 @@
+LIBRARY	"Spotify"
+
+EXPORTS
+	GetGkeyCommandList
+	RunGkeyCommand
