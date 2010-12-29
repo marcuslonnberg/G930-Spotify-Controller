@@ -1,8 +1,10 @@
 G930 Spotify Controller
+=======================
 
 A plugin for the Logitech G930 headset which lets you use the G-keys to control Spotify.
 
----INSTALL---
+INSTALL
+-------
 
 1. Download the Spotify.dll file.
 2. Make sure you have "Microsoft Visual C++ 2010 Redistributable Package (x86)" installed.
@@ -13,6 +15,7 @@ A plugin for the Logitech G930 headset which lets you use the G-keys to control 
    If not, make sure you have installed the above package from Microsoft.
 5. Enjoy wireless control over Spotify.
 
----Note---
+Note
+----
 
 The plugin have only been tested with Windows 7 x64.
