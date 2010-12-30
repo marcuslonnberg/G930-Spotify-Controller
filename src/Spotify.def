@@ -1,4 +1,4 @@
-LIBRARY	"Spotify"
+﻿LIBRARY	"Spotify"
 
 EXPORTS
 	GetGkeyCommandList

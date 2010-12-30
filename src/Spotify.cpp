@@ -1,5 +1,19 @@
-// Spotify.cpp
-// Created by Marcus Lönnberg on 2010-12-29.
+/* Spotify.cpp
+
+Copyright 2010 Marcus LÃ¶nnberg
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
 
 #include "stdafx.h"
 #include <time.h>
@@ -28,12 +42,12 @@ static WCHAR* CommandListENG[] = {
 
 static WCHAR* CommandListSWE[] = {
 	L"Spela/paus",
-	L"Nästa låt",
-	L"Föregående låt",
-	L"Spela/paus samt nästa låt",
-	L"Spela/paus samt föregående låt",
-	L"Nästa låt samt föregående låt",
-	L"Föregående låt samt nästa låt",
+	L"NÃ¤sta lÃ¥t",
+	L"FÃ¶regÃ¥ende lÃ¥t",
+	L"Spela/paus samt nÃ¤sta lÃ¥t",
+	L"Spela/paus samt fÃ¶regÃ¥ende lÃ¥t",
+	L"NÃ¤sta lÃ¥t samt fÃ¶regÃ¥ende lÃ¥t",
+	L"FÃ¶regÃ¥ende lÃ¥t samt nÃ¤sta lÃ¥t",
 	NULL
 };
 
@@ -53,7 +67,7 @@ void SendMediaCommand(int mediaCommand){
 	LRESULT res = SendMessage(hwnd, WM_APPCOMMAND , 0, mediaCommand*0x10000);
 }
 
-BOOL RunGkeyCommand (unsigned int commandID){
+BOOL RunGkeyCommand(unsigned int commandID){
 	BOOL retVal = TRUE;
 	BOOL doubleClick = FALSE;
 
